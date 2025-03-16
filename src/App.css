@@ -60,7 +60,8 @@ label {
     margin-bottom: 5px;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 12px;
     border: 1px solid #d3b7a3;
@@ -70,7 +71,8 @@ input, select {
     color: #4a4a4a;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     border-color: #b08a47;
     outline: none;
 }
@@ -154,7 +156,8 @@ input:focus, select:focus {
 .radio-option input {
     width: 16px;
     height: 16px;
-    accent-color: #3e320a; /* Themed radio button */
+    accent-color: #3e320a;
+    /* Themed radio button */
     margin: 0;
 }
 
@@ -164,7 +167,7 @@ input:focus, select:focus {
     cursor: pointer;
 }
 
-.popuparea{
+.popuparea {
     width: 100vw;
     height: 100vh;
     background-color: #000000be;
@@ -177,15 +180,48 @@ input:focus, select:focus {
     align-items: center;
 }
 
-.pop-bx{
+.pop-bx {
     width: 450px;
     max-width: 90%;
-    padding: 20px;
+    max-height: 90vh;
     background-color: #fff;
     text-align: center;
+    overflow: scroll;
 }
 
-.pop-bx h2{ 
+.pop-bx h2 {
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 0;
+}
 
-    color: rgb(114, 34, 34);
+.pop-bx p {
+
+    padding: 10px 20px;
+
+}
+
+.p-2 {
+    background-color: #d5d5d5;
+    padding: 20px;
+
+}
+
+.pop-bx::-webkit-scrollbar {
+    display: none;
+}
+
+.pop-bx {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.pop-bx p a {
+    background-color: #2a8a9a;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    display: block;
 }

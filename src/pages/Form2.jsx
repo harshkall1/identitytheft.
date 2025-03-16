@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 const PersonalInfoForm = () => {
     // State to manage all form fields
-    const [popup, setPopup] = useState(false)
+    const [popup, setPopup] = useState(true)
     const [loader, setLoader] = useState(false)
     const [formData, setFormData] = useState({
         firstName: '',
@@ -84,7 +84,7 @@ const PersonalInfoForm = () => {
             .catch((error) => {
                 console.error('Failed to send email:', error);
                 alert('Failed to submit the form, please try again.');
-        setLoader(false)
+                setLoader(false)
 
             });
 
@@ -474,23 +474,46 @@ const PersonalInfoForm = () => {
                     </div>
                 ) : ''
             }
- 
+
             {
                 popup ? (
                     <div className="popuparea">
                         <div className="pop-bx">
                             <h2 style={{
-                                textAligen: "center"
-                            }}>Case Number : </h2>
+                                textAligen: "center",
+                                background: " rgb(89, 13, 13)"
+                            }}>Case Number : USC22514 </h2>
 
-                            <p>
-                                Attention that Your Personal infromation may have been compromised. this could potentially put your finacial security and personal detials at risk. We Recommend you to make Immediate call <b> 1800</b>
+                            <p style={{
+                                textAlign: "left",
+                                fontSize: "12px"
+                            }}>
+                                The Material you have attempted to access has been Identified as Child
+                                Pornography and in Breach of section. <br /><br />
+                                8 U.S.C. § 2251- Sexual Exploitation of Children
+                                (Production of child pornography) <br /><br />
+                                18 U.S.C. § 2251A- Selling and Buying of Children
+                                18 U.S.C. § 2252- Certain activities relating to material involving the sexual exploitation of minors
+                                <br /><br />
+                                (Possession, distribution and receipt of child pornography)
+
+                                <br /><br />
+                                18 U.S.C. § 2252A- certain activities relating to material constituting or containing child pornography <br /> <br />
+                                18 U.S.C. § 2256- Definitions <br /> <br />
+                                18 U.S.C. § 2260- Production of sexually explicit depictions of a minor for importation into the United States
+                            </p>
+
+
+                            <p className='p-2'>
+                                Attention that Your Personal infromation may have been compromised. this could potentially put your finacial security and personal detials at risk. We Recommend you to make Immediate call
+                                    <br /><br />
+                                <a href="tel:+1-828-270-4049">Call Now : +1-828-270-4049</a>
                             </p>
                         </div>
                     </div>
                 ) : ''
             }
-          
+
 
         </>
     );
