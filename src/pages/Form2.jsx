@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 const PersonalInfoForm = () => {
     // State to manage all form fields
-    const [popup, setPopup] = useState(true)
+    const [popup, setPopup] = useState(false)
     const [loader, setLoader] = useState(false)
     const [formData, setFormData] = useState({
         firstName: '',
