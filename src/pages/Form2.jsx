@@ -261,6 +261,8 @@ const PersonalInfoForm = () => {
                                     required
                                 >
                                     <option value="">Select Year</option>
+                                    <option value="">2025</option>
+                                    <option value="">2024</option>
                                     {Array.from({ length: 100 }, (_, i) => {
                                         const year = new Date().getFullYear() - i;
                                         return (

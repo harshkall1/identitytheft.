@@ -37,6 +37,8 @@ const FraudulentLoanForm = () => {
                         </select>
                         <select>
                             <option>Select Year</option>
+                            <option value="">2025</option>
+                            <option value="">2024</option>
                             {Array.from({ length: 50 }, (_, i) => (
                                 <option key={i} value={2023 - i}>{2023 - i}</option>
                             ))}
@@ -53,6 +55,8 @@ const FraudulentLoanForm = () => {
                         </select>
                         <select>
                             <option>Select Year</option>
+                            <option value="">2025</option>
+                            <option value="">2024</option>
                             {Array.from({ length: 50 }, (_, i) => (
                                 <option key={i} value={2023 - i}>{2023 - i}</option>
                             ))}
