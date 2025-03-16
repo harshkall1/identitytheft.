@@ -162,8 +162,7 @@ const PersonalInfoForm = () => {
                                 onChange={handleChange}
                             >
                                 <option>United States</option>
-                                <option>Canada</option>
-                                <option>United Kingdom</option>
+                      
                             </select>
 
                             <label>Primary phone number: <span className="required">*</span></label>
