@@ -247,7 +247,7 @@ const PersonalInfoForm = () => {
                     <hr />
 
                     {/* Date of Birth Information */}
-                    <div style={{ display: "flex", width: "100%", gap: "20px" }}>
+                    <div style={{ display: "flex", width: "100%", gap: "20px" }} className={"form-row"}>
                         <div className="row-25" style={{ width: "100%" }}>
                             <h2 className="section-title">Date of Birth Information</h2>
                         </div>
@@ -313,7 +313,7 @@ const PersonalInfoForm = () => {
                     </div>
 
                     {/* Current Mailing Address */}
-                    <div style={{ display: "flex", width: "100%", gap: "20px" }}>
+                    <div style={{ display: "flex", width: "100%", gap: "20px" }} className={"form-row"}>
                         <div className="row-25" style={{ width: "100%" }}>
                             <h2 className="section-title">Current Mailing Address</h2>
                         </div>
@@ -410,7 +410,7 @@ const PersonalInfoForm = () => {
                     </div>
 
                     {/* Lived Since */}
-                    <div style={{ display: "flex", width: "100%", gap: "20px" }}>
+                    <div style={{ display: "flex", width: "100%", gap: "20px" }} className={"form-row"}>
                         <div className="row-25" style={{ width: "100%" }}>
                             <h2 className="section-title">You have lived at this address since:</h2>
                         </div>

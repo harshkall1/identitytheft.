@@ -182,10 +182,10 @@ const Assistant = () => {
                                 </p>
                             </div>
                         </div>
-                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <button className='green-button' onClick={() => setTab('0')}>Back</button>
+                        <div style={{ display: 'flex', justifyContent: 'space-between' }} className={"buttonbx"}>
+                            <button className='green-button b1' onClick={() => setTab('0')}>Back</button>
                             <Link to="/report">
-                                <button className='green-button' onClick={() => setTab('0')}>Continue <FaArrowRight /></button>
+                                <button className='green-button b2' onClick={() => setTab('0')}>Continue <FaArrowRight /></button>
                             </Link>
                         </div>
 
@@ -199,7 +199,7 @@ const Assistant = () => {
                                         {item.label} <FaArrowRight />
                                     </button>
                                 ))}
-                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }} className={"buttonbx"}>
                                     <button className='green-button' onClick={() => setTab('0')}>Back</button>
                                     <Link to="/report">
                                         <button className='green-button' onClick={() => setTab('0')}>Continue <FaArrowRight /></button>
@@ -210,7 +210,7 @@ const Assistant = () => {
                             <>
                                 <button className='row-75-button'>Yes, someone used my information to make purchases or open accounts. <FaArrowRight /></button>
                                 <button className='row-75-button'>No, I'm not aware of any misuse. <FaArrowRight /></button>
-                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }} className={"buttonbx"}>
                                     <button className='green-button' onClick={() => setTab('0')}>Back</button>
                                     <Link to="/report">
                                         <button className='green-button' onClick={() => setTab('0')}>Continue <FaArrowRight /></button>
@@ -228,7 +228,7 @@ const Assistant = () => {
                                         </label>
                                     ))}
                                 </div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }} className={"buttonbx"}>
                                     <button className='green-button' onClick={() => setTab('0')}>Back</button>
                                     <Link to="/report">
                                         <button className='green-button' onClick={() => setTab('0')}>Continue <FaArrowRight /></button>
@@ -238,7 +238,7 @@ const Assistant = () => {
                         ) : (
                             <>
                                 <p>Content for {subTab}</p>
-                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }} className={"buttonbx"}>
                                     <button className='green-button' onClick={() => setTab('0')}>Back</button>
                                     <Link to="/report">
                                         <button className='green-button' onClick={() => setTab('0')}>Continue <FaArrowRight /></button>
@@ -257,7 +257,7 @@ const Assistant = () => {
                                     </label>
                                 ))}
                             </div>
-                            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between' }} className={"buttonbx"}>
                                 <button className='green-button' onClick={() => setTab('0')}>Back</button>
                                 <Link to="/report">
                                     <button className='green-button' onClick={() => setTab('0')}>Continue <FaArrowRight /></button>

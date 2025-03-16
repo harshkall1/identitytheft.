@@ -10,7 +10,7 @@ const Header = () => {
             </div>
             <header>    
                 <div className="container">
-                    <img height={85} src="https://www.identitytheft.gov/assets/img/IDT-Logo.png" alt="" />
+                    <img height={85} src="https://www.identitytheft.gov/assets/img/IDT-Logo.png" className='logo' alt="" />
                     
                 </div>
             </header>
